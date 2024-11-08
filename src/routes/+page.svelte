@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Head from "$lib/components/Head.svelte";
+  import Skibidi from "$lib/components/SkibidiPage.svelte";
 </script>
 
-<Head />
+<Skibidi />

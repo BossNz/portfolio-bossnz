@@ -18,6 +18,7 @@ Title: Burger King Man
     forwardEventHandlers,
   } from "@threlte/core";
   import { useGltf } from "@threlte/extras";
+  import { scaleFactor } from "$lib/stores/shares";
 
   type $$Props = Props<THREE.Group>;
   type $$Events = Events<THREE.Group>;
@@ -47,7 +48,7 @@ Title: Burger King Man
   {:then gltf}
     <T.Group
       rotation={[2.5, 1, 0.3]}
-      scale={0.005}
+      scale={0.003 * $scaleFactor}
     >
       <T.Group position={[-35.08, -32.06, -46.84]}>
         <T.Mesh

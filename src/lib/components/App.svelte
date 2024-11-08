@@ -5,7 +5,7 @@
 
 </script>
 
-<Stars depth={-100} saturation={100} factor={0.2} />
+<Stars depth={-100} saturation={100} factor={0.5} />
 <T.PerspectiveCamera makeDefault position={[0, 0, 10]} fov={15}>
   <OrbitControls
     autoRotate

@@ -1,5 +1,6 @@
 <script lang="ts">
   import "$lib/css/tailwind.css";
+  import { playSound } from "$lib/utils/playsound";
   import { expoInOut } from "svelte/easing";
   import { slide } from "svelte/transition";
 
@@ -8,7 +9,7 @@
 
   const handleClick = () => {
     visible = !visible;
-    (new Audio("/skibidi.mp3")).play();
+    playSound();
   };
 </script>
 
